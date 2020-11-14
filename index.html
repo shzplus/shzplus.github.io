@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en_US">
+	<head>
+		<!-- Primary Meta Tags -->
+<title>Home - The ShzPlus Project</title>
+<meta name="title" content="Home - The ShzPlus Project">
+<meta name="description" content="The ShzPlus Project is a C++-based project. It has many powerful functions and user-friendly to use. ShzPlus is an open-sourced software. That means that you can get it's services for free!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shzplus.github.io/">
+<meta property="og:title" content="Home - The ShzPlus Project">
+<meta property="og:description" content="The ShzPlus Project is a C++-based project. It has many powerful functions and user-friendly to use. ShzPlus is an open-sourced software. That means that you can get it's services for free!">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://shzplus.github.io/">
+<meta property="twitter:title" content="Home - The ShzPlus Project">
+<meta property="twitter:description" content="The ShzPlus Project is a C++-based project. It has many powerful functions and user-friendly to use. ShzPlus is an open-sourced software. That means that you can get it's services for free!">
+<meta property="twitter:image" content="">
+		<script>
+			function goto(path){
+				window.location.href="https://shzplus.github.io"+path;	
+			}
+			function suggest(){
+				window.location.href="mailto:shuzhou.liu@hotmail.com?subject=ShzPlus%20Project%20Suggestion";	
+			}
+		</script>
+	</head>
+	<body onload="time()">
+		<em><strong>The ShzPlus Project</strong></em>&nbsp;&nbsp;
+		<a href="javascript:void(0);" onclick="goto('/docs')">
+			<em>Docs</em>
+		</a>&nbsp;&nbsp;
+		<a href="javascript:void(0);" onclick="goto('/download')">
+			<em>Download</em>
+		</a>&nbsp;&nbsp;
+		<a href="javascript:void(0);" onclick="goto('/donate?via=wechat')">
+			<em>Donate</em>
+		</a>&nbsp;&nbsp;
+		<a href="javascript:void(0);" onclick="goto('/developers')">
+			<em>Developers</em>
+		</a>&nbsp;&nbsp;
+		<a href="javascript:void(0);" onclick="suggest()">
+			<button>Suggest</button>
+		</a>
+		<hr>
+		<shzbanner>
+			<em><span id="currtime"></span></em>
+			<script>
+				function time(){
+					var today = new Date();
+					document.getElementById("currtime").innerHTML = today;
+					a();
+				}
+				function a(){
+					setTimeout("time()",500);
+				}
+			</script>
+		</shzbanner>
+		<hr>
+		<h3><em>Don't Understand what ShzPlus Code Means?</em></h3>
+		<h4><em>Don't worry. Our documentations can help you solve the problem and make you learn ShzPlus easily!</em></h4>
+		<input type="submit" value="Learn ShzPlus" onclick="goto('/docs')"/><br>
+		<hr>
+		<h4><em>If you want a brief information, look here...</em></h4>
+		<h5><em>Defining ShzPlus C++:</em></h5>
+		<code>
+			Using ShzPlus in C++ is a quite big work because it is quite difficult to those that are not friendly to C++.
+			We recommend you to use a easy-to-use IDE Dev-C++ if you are quite new to C++ and an IDE Code::Blocks or Visual Studio
+			for those that are very friendly to C++.
+		</code><br>
+		<code>Download 
+			<a href="javascript:void(0);" onclick="goto('dev-cpp.exe')">
+				Dev-C++
+			</a>&nbsp;or...&nbsp;
+			<a href="javascript:void(0);" onclick="goto('codeblocks.exe')">
+				Code::Blocks
+			</a>&nbsp;or...&nbsp;
+			<a href="javascript:void(0);" onclick="goto('dev-cpo.exe')">
+				Visual Studio
+			</a>
+		</code><br>
+		<code>
+			After you finished with those blasted IDE works, it is time
+			to get started with ShzPlus!<br>
+			First, you can start with a include preprocessor and a using namespace:<br>
+			<fieldset style="background:lightgrey">
+				<span style="color:green">#include &lt;shzplus.h&gt;</span><br>
+				<span style="color:yellow">
+					using namespace 
+				</span>
+				shzplus<span style="color:red">;</span>
+			</fieldset>
+			<br>
+			Then you can make a brief ShzPlus Project:
+			<fieldset style="background:lightgrey">
+				<span style="color:green">#include &lt;shzplus.h&gt;</span><br>
+				<span style="color:yellow">
+					using namespace 
+				</span>
+				shzplus<span style="color:red">;</span><br>
+				<span style="color:yellow">
+					process
+				</span><span style="color:red">{</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">
+					shzplus
+				</span><span style="color:red">(</span>
+				<span style="color:blue">
+					version
+				</span><span style="color:red">(</span>
+				<span style="color:purple">3</span><span style="color:red">));</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">//Enter code here...</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:yellow">return </span><span style="color:purple">0</span><span style="color:red">;</span><br>
+				<span style="color:red">};</span>
+			</fieldset>
+			<code>On the go, aren't you?</code>
+			<hr>
+			<footer>
+				<center>
+					<em>
+						&copy;2020 The ShzPlus Project. All rights reserved.
+					</em>
+				</center>
+			</footer>
+			</body>
+		</html>
